@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.externalButton a {
+	color: rgba(100, 100, 100, 1);
+	text-decoration: none;
+}
+
+.externalButton a:hover {
+	color: rgba(150, 150, 150, 1)
+}
+
+#externalMenu {
+	background-color: rgba(245, 245, 245, 1);
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	border: 1px solid rgba(180, 180, 180, 1);
+}
+
+.externalButton {
+	padding: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	letter-spacing: 0.025vw;
+	font-family: "Myriad Pro", "Lucida Grande", sans-serif;
+	width: 19.68%;
+	text-align: center;
+	border-right: 1px solid rgba(180, 180, 180, 1);
+}
+
+.lastButton {
+	border: 0;
+}
+
+.currentButton {
+	font-weight: 600;
+	color: rgba(100, 100, 100, 1);
+}
+
+.container {
+	margin: auto;
+	margin-top: 100px;
+}
