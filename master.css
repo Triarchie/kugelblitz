@@ -1,0 +1,230 @@
+body{
+	font: sans-serif;
+	background: #222;
+	color:#AAA;
+}
+
+#main_div, #textlogobox, nav, footer{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main_div{
+	margin: 5px auto;
+	width: 950px;
+	background-color: transparent;
+	padding-bottom: 30px;
+}
+
+header{
+	background: transparant;
+	height: 130px;
+}
+
+#textlogobox{
+	width: 950px;
+	height: 130px;
+	background: transparant;
+	color: #888;
+	padding: 0;
+	float: left;
+}
+
+#textlogobox h1{
+	font: sans-serif;
+	border-bottom: 0;
+	text-transform: none;
+	margin: 0;
+	float: center;
+}
+
+#textlogo h1, #textlogo h1 a, #textlogo h1 a:hover{
+	padding: 0;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 70px;
+}
+
+#textlogo h1 a .color_change{
+	color: #09D4FF;
+}
+
+#textlogo a:hover .color_change{
+	color: black;
+}
+
+nav{
+	height: 44px;
+	width: 950px;
+	float: right;
+	margin: -20px auto 0 auto;
+	padding: 0px 10px 0px 0px;
+	background: -moz-linear-gradient(#666, #444);
+	background: -o-linear-gradient(#666,#444);
+	background: -webkit-linear-gradient(#666,#444);
+	-webkit-box-shadow: rgba(0,0,0,0.2) 0px 2px 2px;
+	-moz-box-shadow: rgba(0,0,0,0.2) 0px 2px 2px;
+	box-shadow: rgba(0,0,0,0.2) 0px 2px 2px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+a, a:hover{
+	outline: none;
+	text-decoration: underline;
+	color: #09D4FF;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+ul.web_menu{
+	margin: 1px;
+	padding: 1px;
+}
+
+ul.web_menu li{
+	display: block;
+	list-style: none;
+	float: left;
+	position: relative;
+}
+
+
+ul.web_menu a{
+	display: block;
+	position: relative;
+}
+
+
+ul#nav{
+	float: center;
+}
+
+ul#nav ul{
+	background: transparant;
+	margin-top: 5px;
+	padding-bottom: 15px;
+}
+
+ul#nav li a{
+	padding: 10px 1px 1px 20px;
+	font: sans-serif;
+	text-shadow: 0px 1px #000;
+	text-decoration: none;
+	color: #FFF;
+	margin-right: 69px;
+}
+
+ul#nav li a:hover, ul #nav li a:focus, ul#nav li.clicked a, ul#nav li.clicked a:hover, ul#nav li.clicked a:focus{
+	color: #09D4FF;
+	text-shadow: none;
+}
+
+ul#nav ul li a{
+	color: #FFF;
+}
+
+ul#nav ul li a:hover {
+	color: #09D4FF;
+	margin-right: 25px;
+}
+ /* Style the list */
+ul.breadcrumb {
+	width: 950px;
+	float: center;
+    padding: 1px 1px;
+    list-style: none;
+    background-color: transparant;
+    font-size: 17px;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline-block;
+	margin:0px;
+	padding: 0px 0px 0px 0px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 10px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #696969;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color:  #09D4FF;
+    text-decoration: none;
+}
+
+ul#bc li a:hover, ul #bc li a:focus, ul#bc li.clicked a, ul#bc li.clicked a:hover, ul#bc li.clicked a:focus{
+	color: #09D4FF;
+	text-decoration: none;
+}
+
+.autoFit{
+	display: inline;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.classImg{
+	max-height: 100%;
+	max-width: 100%;
+}
+footer{
+	width:950px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #444;
+	height: 60px;
+	text-align: center;
+	padding: 5px 0 20px 0;
+}
+
+footer p{
+	line-height: 1.7em;
+	padding: 0 0 10px 0;
+}
+
+footer a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: #09D4FF;
+	text-shadow: none;
+	text-decoration: none;
+}
+
+.authorAshwin {
+	background: url('cv/ashwin/profile.png');
+	background-size: cover;
+	background-position: center center;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+}
+
+.authorJose {
+	background: url('../images/picture.jpg');
+	background-size: cover;
+	background-position: center center;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+}
