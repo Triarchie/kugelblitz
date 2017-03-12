@@ -1,0 +1,41 @@
+html { 
+	background: url(elena-prokofyeva.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family:  sans-serif;
+}
+h1{
+	font-weight: 100;
+	letter-spacing: 6;
+	font-size: 20px;
+}
+p{
+	font-weight:50;
+	letter-spacing: 1;
+}
+a{
+	color:white;
+}
+.prof-box {
+	width: 600px;
+	height: 1800px;
+	background: rgba(0,0,0,0.3); 
+	padding: 50px;
+	color: white;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+.prof-pic{
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+}
+.social-icons{
+	font-size:40px;
+}
+.social-icons a{
+	color: white;
+}
