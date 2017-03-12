@@ -4,14 +4,6 @@
 	Student ID: w1544934
 */
 
-html {
-	box-sizing:border-box;
-}
-
-*, *:before, *:after {
-	box-sizing:inherit;
-}
-
 /*
 	Below are general containers for page information, not mandatory
 */
@@ -29,23 +21,23 @@ html {
 
 /*
 	Below are rules for the gallery
-	Base rules are copied from w3schools.com image gallery guide where the 
-	rules are changed in accordance to the specification
 */
 
 #galleryContainer {
-	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	box-sizing: border-box;
 }
 
 .topContainer {
 	line-height: 0;
-	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	box-sizing: border-box;
 }
 
 .featuredContainer {
+	position: relative;
 	width: 75%;
 	display: inline-block;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	box-sizing: border-box;
 }
 
 .featuredGame {
@@ -58,10 +50,54 @@ html {
 	display: inline-block;
 	vertical-align: top;
 	line-height: normal;
+	height: 400px;
+	padding-left: 5px;
+	box-sizing: border-box;
 }
 
 .featuredDescription {
 	display: none;
+	position: relative;
+	height: 400px;
+	box-sizing: border-box;
+}
+
+.featuredDescription h3{
+	color: #fff;
+}
+
+.status {
+	padding-top: 10px;
+	font-size: 13px;
+}
+
+.price {
+	color: #fff;
+	position: absolute;
+	bottom: 8px;
+	font-size: 14px;
+}
+
+.buy {
+	position: absolute;
+	padding: 4px;
+	bottom: 5px;
+	right: 15px;
+	text-transform: uppercase;
+	background-color: rgba(170, 170, 170, 0.2);
+	text-align: center;
+	border: 1px solid #AAA;
+	border-radius: 5px;
+	font-size: 13px;
+}
+
+.buy:hover {
+
+}
+
+.featuredDescription h3 {
+	margin: 0;
+	padding-top: 1em;
 }
 
 .section {
@@ -101,7 +137,7 @@ html {
 	-webkit-backface-visibility:hidden;
 }
 
-@keyframes fading{
+@keyframes fading {
 	0% {
 		opacity:0.8
 	}
@@ -112,12 +148,95 @@ html {
 }
 
 /*
+	Below are the collapsible style settings
+*/
+
+#settings {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+    height: auto;
+    float: left;
+    z-index: 10;
+    background: #323232;
+    padding: 40px 20px 20px 20px;
+    opacity: 0.9;
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0.9;
+	}
+}
+
+/*
+	Fill Color Icon
+	by ✦ Shmidt Sergey ✦
+	from Noun Project (https://thenounproject.com/search/?q=color+bucket&i=689818)
+	CC BY 3.0 US (https://creativecommons.org/licenses/by/3.0/us/)
+*/
+
+.settingsButton {
+	z-index: 11;
+	position: absolute;
+	opacity: 0.7;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.settingsButton:hover {
+	opacity: 1;
+}
+
+#settings:target {
+	display: block;
+}
+
+.show {
+	display: none;
+}
+
+.hide:target + .show {
+	display: inline;
+}
+
+.hide:target {
+	display: none;
+}
+
+.hide:target ~ #settings {
+	display: inline;
+}
+
+#settings label {
+	display: block;
+	margin-top: 20px;
+	height: 18px;
+}
+
+#settingsLabel {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-weight: 600;
+	color: #fff;
+}
+
+/*
 	Bellow are gallery background and text settings
 */
 
 .defaultBackground, .whiteBackground, .blackBackground, .redBackground, .blueBackground, .greenBackground {
-	max-width:1024px;
+	max-width: 950px;
 	margin:auto;
+	background: #323232;
+	border-radius: 5px;
 }
 
 .whiteBackground {
@@ -137,7 +256,7 @@ html {
 }
 
 .defaultText {
-
+	color: inherit;
 }
 
 .whiteText {

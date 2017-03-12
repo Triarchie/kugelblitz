@@ -1,7 +1,10 @@
 body{
-	font: sans-serif;
-	background: #222;
+    background: linear-gradient(to bottom right, #333, #111);
 	color:#AAA;
+	font-family: 'Roboto', sans-serif;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
 }
 
 #main_div, #textlogobox, nav, footer{
@@ -19,15 +22,36 @@ body{
 header{
 	background: transparant;
 	height: 130px;
+	margin-bottom: 40px;
+}
+
+/*
+	Tank Icon
+	by Renan Ferreira Santos
+	from Noun Project(https://thenounproject.com/search/?q=tank&i=38901)
+	CC BY 3.0 US (https://creativecommons.org/licenses/by/3.0/us/)
+*/
+
+
+#logoImage {
+	display: inline-block;
+}
+
+#logoText{
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 20px;
 }
 
 #textlogobox{
 	width: 950px;
-	height: 130px;
+	height: 110px;
 	background: transparant;
 	color: #888;
-	padding: 0;
 	float: left;
+	box-sizing: content-box;
+	vertical-align: top;
+	padding-bottom: 20px;
 }
 
 #textlogobox h1{
@@ -36,6 +60,10 @@ header{
 	text-transform: none;
 	margin: 0;
 	float: center;
+	font-family: 'Press Start 2P';
+	-webkit-text-stroke: 1px black;
+	text-shadow: 3px 3px 0 black;
+
 }
 
 #textlogo h1, #textlogo h1 a, #textlogo h1 a:hover{
@@ -44,14 +72,23 @@ header{
 	text-decoration: none;
 	text-align: center;
 	font-size: 70px;
+
 }
 
-#textlogo h1 a .color_change{
-	color: #09D4FF;
+#textlogo h1 a .color_change,{
+	color: #fff;
 }
 
 #textlogo a:hover .color_change{
-	color: black;
+	color: #09D4FF;
+}
+
+.color_change2 {
+	color: #09D4FF;
+}
+
+#textlogo a:hover .color_change2 {
+	color: #fff;
 }
 
 nav{
@@ -59,7 +96,6 @@ nav{
 	width: 950px;
 	float: right;
 	margin: -20px auto 0 auto;
-	padding: 0px 10px 0px 0px;
 	background: -moz-linear-gradient(#666, #444);
 	background: -o-linear-gradient(#666,#444);
 	background: -webkit-linear-gradient(#666,#444);
@@ -74,11 +110,12 @@ nav{
 
 a, a:hover{
 	outline: none;
-	text-decoration: underline;
-	color: #09D4FF;
+	text-decoration: none;
+	color: #fff;
 }
 
 a:hover{
+	color: #09D4FF;
 	text-decoration: none;
 }
 
@@ -92,6 +129,8 @@ ul.web_menu li{
 	list-style: none;
 	float: left;
 	position: relative;
+	width: 14.28%;
+	text-align: center;
 }
 
 
@@ -112,12 +151,11 @@ ul#nav ul{
 }
 
 ul#nav li a{
-	padding: 10px 1px 1px 20px;
+	padding: 10px 0px 1px 0px;
 	font: sans-serif;
 	text-shadow: 0px 1px #000;
 	text-decoration: none;
 	color: #FFF;
-	margin-right: 69px;
 }
 
 ul#nav li a:hover, ul #nav li a:focus, ul#nav li.clicked a, ul#nav li.clicked a:hover, ul#nav li.clicked a:focus{
@@ -136,11 +174,14 @@ ul#nav ul li a:hover {
  /* Style the list */
 ul.breadcrumb {
 	width: 950px;
-	float: center;
     padding: 1px 1px;
     list-style: none;
-    background-color: transparant;
+    background-color: #222;
     font-size: 17px;
+    padding: 5px 0 5px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    border-top: 1px solid #777;
 }
 
 /* Display list items side by side */
@@ -184,15 +225,14 @@ ul#bc li a:hover, ul #bc li a:focus, ul#bc li.clicked a, ul#bc li.clicked a:hove
 	max-height: 100%;
 	max-width: 100%;
 }
-footer{
+
+footer {
 	width:950px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	background-color: #444;
-	height: 60px;
+	border-top: 1px solid #777;
+	background-color: #222;
+	height: 50px;
 	text-align: center;
-	padding: 5px 0 20px 0;
+	padding: 15px 0 20px 0;
 }
 
 footer p{
@@ -211,20 +251,72 @@ footer a:hover{
 	text-decoration: none;
 }
 
-.authorAshwin {
+.author {
+	display: inline-block;
+	width: 300px;
+	box-sizing: border-box;
+}
+
+.author a{
+	box-sizing: border-box;
+}
+
+#authorContainer {
+	background: #222;
+	padding: 1px 0px 20px 20px;
+	border-top: 1px solid #777;
+}
+
+.authorPortrait {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	border-radius: 5%;
+	border: 2px solid #AAA;
+	box-sizing: inherit;
+}
+
+#authorAshwin {
 	background: url('cv/ashwin/profile.png');
 	background-size: cover;
 	background-position: center center;
-	display: inline-block;
-	height: 100px;
-	width: 100px;
 }
 
-.authorJose {
-	background: url('../images/picture.jpg');
+#authorJose {
+	background: url('cv/jose/picture.jpg');
 	background-size: cover;
 	background-position: center center;
+}
+
+.authorTextContainer {
 	display: inline-block;
-	height: 100px;
-	width: 100px;
+	width: 190px;
+	vertical-align: top;
+	margin-left: 5px;
+	box-sizing: inherit;
+}
+
+.authorName, .authorStudent, .authorContribution{
+	display: block;
+}
+
+.authorName {
+	font-weight: 900;
+}
+
+.authorStudent {
+	font-style: italic;
+	font-size: 12px;
+}
+
+.authorContribution {
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+footer p {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	font-size: 14px;
 }

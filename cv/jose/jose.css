@@ -15,11 +15,11 @@ a.content {
 }
 
 .container {
-	max-width: 1000px;
+	max-width: 800px;
 	width: 75%;
 	background-color: rgba(5, 5, 5, 0.5);
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: Verdana, sans-serif;
 	padding: 50px;
 }
 

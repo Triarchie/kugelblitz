@@ -1,22 +1,94 @@
 <!DOCTYPE html>
 <html>
 <title>Kugelblitz - Sitemap</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="sitemap.css">
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="master.css"/>
+<link rel="stylesheet" type="text/css" href="sitemap.css"/>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="logo/blue.png">
 <body>
-<h2>Sitemap</h2>
-<ul>
-	<li><a href="home.html">Home</a></li>
-	<li><a href=".html">Games</a></li>
-	<li><a href=".html">Trivia</a></li>
-	<li><a href=".html">About</a></li>
-	<li><a href=".html">Support</a></li>
-	<li><a href=".html">Blog</a></li>
-		<ul>
-			<li><a href=".html">2017</a></li>
+<div id="main_div">
+	<!--Global navigation starts here-->
+	<header>
+	<div id="textlogobox">
+		<div id = "textlogo">
+			<h1><a href="home.html">
+			<div id="logoImage">
+			<img src="logo/white.svg" width="100" height="100" />
+			</div>
+			<div id="logoText">
+			<span class="color_change2">KUGEL</span><span class="color_change">BLITZ</span>
+			</div></a></h1>
+		</div>
+	</div>
+	<nav>
+		<ul class="web_menu" id="nav">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="games.html">Games</a></li>
+			<li><a href="trivia.html">Trivia</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="support.html">Support</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="team.html">Team</a></li>
 		</ul>
-	<li><a href=".html">Team</a></li>
-	<li><a href=".html">Sitemap</a></li>
-</ul>
+	</nav>
+	</header>
+	<!--Global navigation ends here-->
+
+	<h2>Sitemap</h2>
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<ul>
+			<li><a href="games.html">Games</a></li>
+			<li><a href="trivia.html">Trivia</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="support.html">Support</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="team.html">Team</a></li>
+		</ul>
+		<li>Footer</li>
+		<ul>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="sitemap.html">Sitemap</a></li>
+			<li><a href="tos.html">Terms of Service</a></li>
+			<li><a href="privacy.html">Privacy Policy</a></li>
+			<li><a href="support.html">Contact Us</a></li>
+		</ul>
+	</ul>
+
+	<!--Footer-->
+	<ul class="breadcrumb" id="bc">
+		<li><a href="home.html">Home</a></li>
+		<li class="clicked"><a href="sitemap.html">Sitemap</a></li>
+	</ul>
+	<div id="authorContainer">
+		<div class="autoFit">
+			<h3> Creators of the page</h3>
+			<div class="author">
+				<a href="cv/ashwin.html" target="_blank"><div class="authorPortrait" id="authorAshwin"></div></a>
+				<div class="authorTextContainer">
+					<div class="authorName" align="left">Ashwin Kanatt</div>
+					<div class="authorStudent">Student 2</div>
+					<div class="authorContribution">Navigation, CSS</div>
+				</div>
+
+			</div>
+			<div class="author">
+				<a href="cv/jose.html" target="_blank"><div class="authorPortrait" id="authorJose"></div></a>
+				<div class="authorTextContainer">
+					<div class="authorName">Jose Bautista</div>
+					<div class="authorStudent">Student 4</div>
+					<div class="authorContribution">Sitemap, CSS</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>Help &amp; Information</p>
+		<p><a href="about.html">About Us</a> | <a href="blog.html">Blog</a> | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
+		<p>&copy; <a href="home.html">kugelblitz.co.uk</a> all rights for the pictures belong to their respectful owners</p>
+	</footer>
+</div>
 </body>
 </html>

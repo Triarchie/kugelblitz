@@ -4,18 +4,26 @@
 <meta charset="UTF-8"/>
 <link rel="stylesheet" type="text/css" href="master.css"/>
 <link rel="stylesheet" type="text/css" href="gallery/gallery.css"/>
+<link rel="icon" type="image/png" href="logo/blue.png">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto" rel="stylesheet">
 <body>
 <div id="main_div">
 	<!--Global navigation starts here-->
 	<header>
 	<div id="textlogobox">
 		<div id = "textlogo">
-			<h1><a href="home.html">KUGEL<span class="color_change">BLITZ</span></a></h1>
+			<h1><a href="home.html">
+			<div id="logoImage">
+			<img src="logo/white.svg" width="100" height="100" />
+			</div>
+			<div id="logoText">
+			<span class="color_change2">KUGEL</span><span class="color_change">BLITZ</span>
+			</div></a></h1>
 		</div>
 	</div>
 	<nav>
 		<ul class="web_menu" id="nav">
-			<li class="clicked"><a href="home.html"> Home</a></li>
+			<li class="clicked"><a href="home.html">Home</a></li>
 			<li><a href="games.html">Games</a></li>
 			<li><a href="trivia.html">Trivia</a></li>
 			<li><a href="about.html">About</a></li>
@@ -31,6 +39,34 @@
 	<div class="defaultBackground" id="galleryContainer">
 		<div class="topContainer">
 			<div class="featuredContainer">
+			<a href="#hide" class="hide" id="hide"><img src="gallery/style.svg" class="settingsButton" width="30" height="30"></a>
+			<a href="#show" class="show" id="show"><img src="gallery/style.svg" class="settingsButton" width="30" height="30"></a>
+			<div id="settings">
+				<div id="settingsLabel">Gallery settings</div>
+				<form>
+					<label for="background">Background colour</label>
+					<select name="background" id="background">
+						<option value="default">Default</option>
+						<option value="white">White</option>
+						<option value="black">Black</option>
+						<option value="red">Red</option>
+						<option value="blue">Blue</option>
+						<option value="green">Green</option>
+					</select>
+					<input type="button" onclick="backgroundColour(this.form);" value="Change">
+					
+					<label for="text">Text colour</label>
+					<select name="text" id="text">
+						<option value="default">Default</option>
+						<option value="white">White</option>
+						<option value="black">Black</option>
+						<option value="red">Red</option>
+						<option value="blue">Blue</option>
+						<option value="green">Green</option>
+					</select>
+					<input type="button" onclick="textColour(this.form);" value="Change">
+				</form>
+			</div>
 				<img class="featuredGame" src="gallery/for_honor.jpg" alt="For Honor" style="width:100%"/>
 				<img class="featuredGame" src="gallery/me_andromeda.jpg" alt="Mass Effect: Andromeda" style="width:100%"/>
 				<img class="featuredGame" src="gallery/nm_sky.jpg" alt="No Man's Sky" style="width:100%"/>
@@ -40,34 +76,29 @@
 			<div class="defaultText" id="descriptionContainer">
 				<div class="featuredDescription">
 					<h3>For Honor</h3>
-					<div>Now Available</div>
+					<div class="status">Now Available</div>
 					<div class="price">£39.99</div>
-					<div class="buy">Buy</div>
-					<div class="view">View</div>
+					<div class="buy"><a href="#buy">Buy</a></div>
 				</div>
 				<div class="featuredDescription">
 					<h3>Mass Effect: Andromeda</h3>
-					<div>Upcoming</div>
-					<div class="view">View</div>
+					<div class="status">Upcoming</div>
 				</div>
 				<div class="featuredDescription">
 					<h3>No Man's Sky</h3>
-					<div>Pre-Order Now</div>
+					<div class="status">Pre-Order Now</div>
 					<div class="price">£39.99</div>
-					<div class="buy">Buy</div>
-					<div class="view">View</div>
+					<div class="buy"><a href="#buy">Buy</a></div>
 				</div>
 				<div class="featuredDescription">
 					<h3>South Park: The Fractured But Whole</h3>
-					<div>Upcoming</div>
-					<div class="view">View</div>
+					<div class="status">Upcoming</div>
 				</div>
 				<div class="featuredDescription">
 					<h3>Tom Clancy's Ghost Recon: Wildlands</h3>
-					<div>In Beta</div>
+					<div class="status">In Beta</div>
 					<div class="price">£39.99</div>
-					<div class="buy">Buy</div>
-					<div class="view">View</div>
+					<div class="buy"><a href="#buy">Buy</a></div>
 				</div>
 			</div>
 		</div>
@@ -90,48 +121,39 @@
 		</div>
 	</div>
 	<script src="gallery/gallery.js"></script>
-	<form>
-		<br>
-		<label for="background">Background colour: </label>
-		<select name="background" id="background">
-			<option value="default">Default</option>
-			<option value="white">White</option>
-			<option value="black">Black</option>
-			<option value="red">Red</option>
-			<option value="blue">Blue</option>
-			<option value="green">Green</option>
-		</select>
 
-		<input type="button" onclick="backgroundColour(this.form);" value="Change background colour">
-
-		<label for="text">Text colour: </label>
-		<select name="text" id="text">
-			<option value="default">Default</option>
-			<option value="white">White</option>
-			<option value="black">Black</option>
-			<option value="red">Red</option>
-			<option value="blue">Blue</option>
-			<option value="green">Green</option>
-		</select>
-
-		<input type="button" onclick="textColour(this.form);" value="Change text colour">
-	</form>
 	<!--Gallery ends here-->
 
 	<!--Footer-->
 	<ul class="breadcrumb" id="bc">
 		<li class="clicked"><a href="home.html">Home</a></li>
 	</ul>
-	<div class="author">
+	<div id="authorContainer">
 		<div class="autoFit">
-			<h3> Creators of the page.</h3>
-			<a href="cv/ashwin.html"><div class="authorAshwin"></div></a>
-			<a href="cv/jose.html"><div class="authorJose"></div></a>
+			<h3> Creators of the page</h3>
+			<div class="author">
+				<a href="cv/ashwin.html" target="_blank"><div class="authorPortrait" id="authorAshwin"></div></a>
+				<div class="authorTextContainer">
+					<div class="authorName" align="left">Ashwin Kanatt</div>
+					<div class="authorStudent">Student 2</div>
+					<div class="authorContribution">Home, Navigation, CSS</div>
+				</div>
+
+			</div>
+			<div class="author">
+				<a href="cv/jose.html" target="_blank"><div class="authorPortrait" id="authorJose"></div></a>
+				<div class="authorTextContainer">
+					<div class="authorName">Jose Bautista</div>
+					<div class="authorStudent">Student 4</div>
+					<div class="authorContribution">Gallery, CSS</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<footer>
-		<p>&copy; <a href="index.html">kugelblitz.co.uk</a>
-				all rights for the pictures belongs to their respectful owners</p>
+		<p>Help &amp; Information</p>
+		<p><a href="about.html">About Us</a> | <a href="blog.html">Blog</a> | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
+		<p>&copy; <a href="home.html">kugelblitz.co.uk</a> all rights for the pictures belong to their respectful owners</p>
 	</footer>
 </div>
 </body>
