@@ -1,0 +1,157 @@
+/*
+	Stylesheet for a gallery showing featured games for Kugelblitz
+	By Jose Bautista
+	Student ID: w1544934
+*/
+
+html {
+	box-sizing:border-box;
+}
+
+*, *:before, *:after {
+	box-sizing:inherit;
+}
+
+/*
+	Below are general containers for page information, not mandatory
+*/
+
+.container:before, .container:after, .row-padding:before, .row-padding:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.container {
+	padding:0.01em 16px;
+}
+
+
+/*
+	Below are rules for the gallery
+	Base rules are copied from w3schools.com image gallery guide where the 
+	rules are changed in accordance to the specification
+*/
+
+#galleryContainer {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+.topContainer {
+	line-height: 0;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+.featuredContainer {
+	width: 75%;
+	display: inline-block;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+.featuredGame {
+	animation: fading 0.8s;
+
+}
+
+#descriptionContainer {
+	width: 24%;
+	display: inline-block;
+	vertical-align: top;
+	line-height: normal;
+}
+
+.featuredDescription {
+	display: none;
+}
+
+.section {
+	margin-top:16px!important;
+	margin-bottom:16px!important
+}
+
+.row-padding {
+	padding:0 8px;
+	line-height:0;
+}
+
+.thumbnail {
+	margin:0.83%;
+	float:left;
+	width:18.3%;
+	box-shadow:0 1px 5px rgba(0,0,0,0.3);
+}
+
+
+/*
+	Below are gallery animations
+*/
+
+.pointer {
+	cursor:pointer;
+	transition:0.5s;
+}
+
+.opacity {
+	opacity:0.60;
+	-webkit-backface-visibility:hidden;
+}
+
+.opacity-off, .hover-opacity-off:hover {
+	opacity:1;
+	-webkit-backface-visibility:hidden;
+}
+
+@keyframes fading{
+	0% {
+		opacity:0.8
+	}
+	
+	100% {
+		opacity:1
+	}
+}
+
+/*
+	Bellow are gallery background and text settings
+*/
+
+.defaultBackground, .whiteBackground, .blackBackground, .redBackground, .blueBackground, .greenBackground {
+	max-width:1024px;
+	margin:auto;
+}
+
+.whiteBackground {
+	background-color: white;
+}
+.blackBackground {
+	background-color: black;
+}
+.redBackground {
+	background-color: darkred;
+}
+.blueBackground {
+	background-color: blue;
+}
+.greenBackground {
+	background-color: green;
+}
+
+.defaultText {
+
+}
+
+.whiteText {
+	color: white;
+}
+.blackText {
+	color: black;
+}
+.redText {
+	color: darkred;
+}
+.blueText {
+	color: blue;
+}
+.greenText {
+	color: green;
+}
