@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
-<title>Kugelblitz - Blog</title>
+<title>Design: Student 4 - Kugelblitz</title>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../master.css"/>
 <link rel="stylesheet" href="blog.css">
+<link rel="icon" type="image/png" href="../logo/blue.png">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto" rel="stylesheet">
 <body>
-<div>
+<div id="main_div">
+	<!--Global navigation starts here-->
+	<header>
+	<div id="textlogobox">
+		<div id = "textlogo">
+			<h1><a href="home.html">
+			<div id="logoImage">
+			<img src="../logo/white.svg" width="100" height="100" />
+			</div>
+			<div id="logoText">
+			<span class="color_change2">KUGEL</span><span class="color_change">BLITZ</span>
+			</div></a></h1>
+		</div>
+	</div>
+	<nav>
+		<ul class="web_menu" id="nav">
+			<li><a href="../home.html">Home</a></li>
+			<li><a href="../tgames.html">Games</a></li>
+			<li><a href="../ttrivia.html">Trivia</a></li>
+			<li><a href="../tabout.html">About</a></li>
+			<li><a href="../tsupport.html">Support</a></li>
+			<li class="clicked"><a href="../tblog.html">Blog</a></li>
+			<li><a href="../team.html">Team</a></li>
+		</ul>
+	</nav>
+	</header>
+	<!--Global navigation ends here-->
+
 	<article>
 		<h3 class="title">Gallery</h3>
 		<span class="date"></span>
@@ -21,6 +51,38 @@
 	</article>
 
 	<hr>
+
+	<!--Footer-->
+	<ul class="breadcrumb" id="bc">
+		<li class="clicked"><a href="home.html">Home</a></li>
+	</ul>
+	<div id="authorContainer">
+		<div class="autoFit">
+			<h3> Creators of the page</h3>
+			<div class="author">
+				<a href="cv/ashwin.html" target="_blank"><div class="authorPortrait" id="authorAshwin"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
+				<div class="authorTextContainer">
+					<div class="authorName" align="left">Ashwin Kanatt</div>
+					<div class="authorStudent">Student 2</div>
+					<div class="authorContribution">Home, Navigation, CSS</div>
+				</div>
+
+			</div>
+			<div class="author">
+				<a href="cv/jose.html" target="_blank"><div class="authorPortrait" id="authorJose"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
+				<div class="authorTextContainer">
+					<div class="authorName">Jose Bautista</div>
+					<div class="authorStudent">Student 4</div>
+					<div class="authorContribution">Gallery, CSS</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>Help &amp; Information</p>
+		<p><a href="about.html">About Us</a> | <a href="blog.html">Blog</a> | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
+		<p>&copy; <a href="home.html">kugelblitz.co.uk</a> all rights for the pictures belong to their respectful owners</p>
+	</footer>
 </div>
 </body>
 </html>

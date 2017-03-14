@@ -10,6 +10,14 @@ body {
 	color: rgba(250, 250, 250, 1);;
 }
 
+h2 {
+	text-shadow: -1px -1px 1px black;
+}
+
+h3 {
+	text-shadow: 0 -1px 1px black;
+}
+
 a.content {
 	color: rgba(250, 250, 250, 1);
 }
@@ -21,6 +29,7 @@ a.content {
 	box-sizing: border-box;
 	font-family: Verdana, sans-serif;
 	padding: 50px;
+	text-shadow: 0 0 1px black;
 }
 
 .half {

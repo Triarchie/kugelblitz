@@ -1,0 +1,55 @@
+hr {
+	margin: 20px 0 20px 0;
+	border-color: #777;
+}
+
+figcaption {
+	text-align: center;
+}
+
+#blogContainer {
+	width: 625px;
+	margin-bottom: 16px;
+	display: inline-block;
+	position: relative;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+#blogContainer img {
+	width: 100%;
+}
+
+#blogContainer h3 {
+	margin-bottom: 5px;
+}
+
+.date {
+	font-size: 13px;
+}
+
+.blogFooter {
+	position: relative;
+}
+
+.blogAuthor {
+	font-size: 14px;
+}
+
+.blogRead {
+	position: absolute;
+	right: 0;
+}
+
+
+#tocContainer {
+	display: inline;
+	width: 325px;
+	position: absolute;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+#tocContainer hr {
+	margin: 8px 0 8px 0;
+}

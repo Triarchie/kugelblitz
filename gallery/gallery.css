@@ -159,7 +159,7 @@
     height: auto;
     float: left;
     z-index: 10;
-    background: #323232;
+    background: #222;
     padding: 40px 20px 20px 20px;
     opacity: 0.9;
     animation: fadein 0.5s;
@@ -235,7 +235,7 @@
 .defaultBackground, .whiteBackground, .blackBackground, .redBackground, .blueBackground, .greenBackground {
 	max-width: 950px;
 	margin:auto;
-	background: #323232;
+	background: #222;
 	border-radius: 5px;
 }
 

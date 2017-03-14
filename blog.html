@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Kugelblitz - Blog</title>
+<title>Blog - Kugelblitz</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="master.css"/>
 <link rel="stylesheet" href="blog/blog.css">
@@ -34,66 +34,81 @@
 	</nav>
 	</header>
 	<!--Global navigation ends here-->
+
+	<div id="blogContainer">
 	<article>
-		<h3 class="title"><a href="blog/title3.html"></a></h3>
-		<span class="date"></span>
+		<h3 class="title"><a href="blog/design-gallery.html"></a></h3>
+		<span class="date">xx March 2017</span>
 		<a href><img src=""/></a>
 		<p></p>
-		<div>
-			<span class="author">Posted by </span>
-			<a href="">READ STORY</a>
+		<div class="blogFooter">
+			<span class="blogAuthor">by </span>
+			<a class="blogRead" href="">READ MORE</a>
 		</div>
 	</article>
 
 	<hr>
 
 	<article>
-		<h3 class="title"><a href="blog/title3.html"></a></h3>
-		<span class="date"></span>
+		<h3 class="title"><a href="blog/design-gallery.html"></a></h3>
+		<span class="date">xx March 2017</span>
 		<a href><img src=""/></a>
 		<p></p>
-		<div>
-			<span class="author">Posted by </span>
-			<a href="">READ STORY</a>
+		<div class="blogFooter">
+			<span class="blogAuthor">by </span>
+			<a class="blogRead" href="">READ MORE</a>
 		</div>
 	</article>
 
 	<hr>
 
 	<article>
-		<h3 class="title"><a href="blog/title3.html"></a></h3>
-		<span class="date"></span>
-		<a href><img src=""/></a>
-		<p></p>
-		<div>
-			<span class="author">Posted by </span>
-			<a href="">READ STORY</a>
+		<h3 class="title" id="design-gallery"><a href="blog/design-gallery.html">Design: Student 4</a></h3>
+		<span class="date">15 March 2017</span>
+		<figure>
+			<a href><img src="blog/design-gallery/gallery.png"/></a>
+			<figcaption>An example of a gallery.</figcaption>
+		</figure>
+		<p>Lorem ipsum meme</p>
+		<div class="blogFooter">
+			<span class="blogAuthor">by <a href="cv/jose.html">Jose Bautista</a></span>
+			<a class="blogRead" href="blog/design-gallery.html">READ MORE</a>
 		</div>
 	</article>
+
 	<hr>
+	</div>
+	<div id="tocContainer">
+	<h3>Recent posts</h3>
+	<hr>
+
+	<hr>
+	<a href="#design-gallery">Design: Student 4</a>
+	<hr>
+	</div>
+
 	<!--Footer-->
 	<ul class="breadcrumb" id="bc">
-		<li><a href="home.html">Home</a></li>
-		<li class="clicked"><a href="blog.html">Blog</a></li>
+		<li class="clicked"><a href="home.html">Home</a></li>
 	</ul>
 	<div id="authorContainer">
 		<div class="autoFit">
 			<h3> Creators of the page</h3>
 			<div class="author">
-				<a href="cv/ashwin.html" target="_blank"><div class="authorPortrait" id="authorAshwin"></div></a>
+				<a href="cv/ashwin.html" target="_blank"><div class="authorPortrait" id="authorAshwin"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
 				<div class="authorTextContainer">
 					<div class="authorName" align="left">Ashwin Kanatt</div>
 					<div class="authorStudent">Student 2</div>
-					<div class="authorContribution">Navigation, CSS</div>
+					<div class="authorContribution">Home, Navigation, CSS</div>
 				</div>
 
 			</div>
 			<div class="author">
-				<a href="cv/jose.html" target="_blank"><div class="authorPortrait" id="authorJose"></div></a>
+				<a href="cv/jose.html" target="_blank"><div class="authorPortrait" id="authorJose"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
 				<div class="authorTextContainer">
 					<div class="authorName">Jose Bautista</div>
 					<div class="authorStudent">Student 4</div>
-					<div class="authorContribution">Blog, CSS</div>
+					<div class="authorContribution">Gallery, CSS</div>
 				</div>
 			</div>
 		</div>
