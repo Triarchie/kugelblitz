@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Stylesheet for a gallery showing featured games for Kugelblitz
 	By Jose Bautista
 	Student ID: w1544934
@@ -139,7 +139,7 @@
 
 @keyframes fading {
 	0% {
-		opacity:0.8
+		opacity:0.7
 	}
 	
 	100% {
