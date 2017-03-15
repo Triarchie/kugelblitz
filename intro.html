@@ -6,8 +6,109 @@
 <link rel="stylesheet" type="text/css" href="gallery/gallery.css"/>
 <link rel="icon" type="image/png" href="logo/blue.png">
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto" rel="stylesheet">
-<body>
-<div id="main_div">
+<style>
+/* This will center the loader */
+/* All below is CSS */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-top: 20px solid #FFF;
+  border-right: 20px solid #09D4FF;
+  border-bottom: 20px solid #AAA;
+  border-left: 20px solid #4d4d4d;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animatebottom;
+  animation-duration: 0.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+/* CSS for loader ends here */
+</style>
+<script>
+var myVar;
+
+function loadingScreenTime() {
+    myVar = setTimeout(showPage, 4000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("authorContainer").style.display = "none";
+  document.getElementById("main_div").style.display = "block";
+}
+</script>
+<!-- Loading screen starts here -->
+<body onload="loadingScreenTime()" style="margin:0;">
+<div id="loader"></div>
+<div id="authorContainer">
+	<div class="autoFit">
+		<h3> Creators of Kugelblitz</h3>
+		<div class="author">
+			<a href="cv/jose.html" target="_blank"><div class="authorPortrait" id="authorAli"></div></a>
+			<div class="authorTextContainer">
+				<div class="authorName">Al-Amine Huda</div>
+				<div class="authorStudent">Student 1</div>
+			</div>
+		</div>
+		<div class="author">
+			<a href="cv/ashwin.html" target="_blank"><div class="authorPortrait" id="authorAshwin"></div></a>
+			<div class="authorTextContainer">
+				<div class="authorName" align="left">Ashwin Kanatt</div>
+				<div class="authorStudent">Student 2</div>
+			</div>
+
+		</div>
+		<div class="author">
+			<a href="cv/jose.html" target="_blank"><div class="authorPortrait" id="authorBen"></div></a>
+			<div class="authorTextContainer">
+				<div class="authorName">Ben</div>
+				<div class="authorStudent">Student 3</div>
+			</div>
+		</div>
+		<div class="author">
+			<a href="cv/jose.html" target="_blank"><div class="authorPortrait" id="authorJose"></div></a>
+			<div class="authorTextContainer">
+				<div class="authorName">Jose Bautista</div>
+				<div class="authorStudent">Student 4</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Loading screen ends here -->
+<div class="animation-bottom" id="main_div" style="display: none">
 	<!--Global navigation starts here-->
 	<header>
 	<div id="textlogobox">
@@ -130,6 +231,14 @@
 	<div id="authorContainer">
 		<div class="autoFit">
 			<h3> Creators of the page</h3>
+			<div class="author">
+				<a href="cv/ali.html" target="_blank"><div class="authorPortrait" id="authorAli"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
+				<div class="authorTextContainer">
+					<div class="authorName">Al-Amine Huda</div>
+					<div class="authorStudent">Student 1</div>
+					<div class="authorContribution">Presentation page, CSS</div>
+				</div>
+			</div>
 			<div class="author">
 				<a href="cv/ashwin.html" target="_blank"><div class="authorPortrait" id="authorAshwin"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
 				<div class="authorTextContainer">

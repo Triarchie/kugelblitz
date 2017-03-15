@@ -298,8 +298,20 @@ footer a:hover{
 	opacity: 0.5;
 }
 
+#authorAli {
+	background: url('cv/ali/profile.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
 #authorAshwin {
 	background: url('cv/ashwin/profile.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+#authorBen {
+	background: url('cv/ben/404.png');
 	background-size: cover;
 	background-position: center center;
 }
