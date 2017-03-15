@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
+<title>Purchase Games</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="master.css"/>
+<link rel="stylesheet" type="text/css" href="gallery/gallery.css"/>
+<link rel="icon" type="image/png" href="logo/blue.png">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto" rel="stylesheet">
 <style>
-/* This will center the loader */
-/*all below is CSS */
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border-top: 20px solid #FFF;
-  border-right: 20px solid #09D4FF;
-  border-bottom: 20px solid #AAA;
-  border-left: 20px solid #4d4d4d;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 0.2s linear infinite;
-  animation: spin 0.2s linear infinite;
-}
+  /* This will center the loader */
+  /* All below is CSS */
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-top: 20px solid #FFF;
+    border-right: 20px solid #09D4FF;
+    border-bottom: 20px solid #AAA;
+    border-left: 20px solid #4d4d4d;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 0.2s linear infinite;
+    animation: spin 0.2s linear infinite;
+  }
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 0.5s;
-  animation-name: animatebottom;
-  animation-duration: 0.5s
-}
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animatebottom;
+    animation-duration: 0.5s
+  }
 
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
 
-#myDiv {
-  display: none;
-  text-align: center;
-}
-/*CSS for loader ends here*/
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+  /*CSS for loader ends here*/
 </style>
-</head>
 <body onload="loadingScreenTime()" style="margin:0;">
-
 <div id="loader"></div>
-
 <script>
 var myVar;
 
@@ -78,13 +80,6 @@ function showPage() {
 <div style="display:none;" id="myDiv" class="animate-bottom">
 
 <!-- Your normal document content lives here -->
-<title>Purchase Games</title>
-<meta charset="UTF-8"/>
-<link rel="stylesheet" type="text/css" href="master.css"/>
-<link rel="stylesheet" type="text/css" href="gallery/gallery.css"/>
-<link rel="icon" type="image/png" href="logo/blue.png">
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto" rel="stylesheet">
-<body>
 <div id="main_div">
 	<!--Global navigation starts here-->
 	<header>
@@ -96,13 +91,14 @@ function showPage() {
 			</div>
 			<div id="logoText">
 			<span class="color_change2">KUGEL</span><span class="color_change">BLITZ</span>
-			</div></a></h1>
+			</div>
+      </a></h1>
 		</div>
 	</div>
 	<nav>
 		<ul class="web_menu" id="nav">
-			<li class="clicked"><a href="home.html">Home</a></li>
-			<li><a href="games.html">Games</a></li>
+			<li><a href="home.html">Home</a></li>
+			<li class="clicked"><a href="games.html">Games</a></li>
 			<li><a href="trivia.html">Trivia</a></li>
 			<li><a href="about.html">About</a></li>
 			<li><a href="support.html">Support</a></li>
@@ -113,9 +109,7 @@ function showPage() {
 	</header>
 	<!--Global navigation ends here-->
 	
-<h1> Choose a Game </h1>
-
-<html>
+<h1>Choose a Game</h1>
 <body id="myP">
 
 <button type="button" onclick="mysFunction()">Small</button>
@@ -125,16 +119,11 @@ function showPage() {
 function mysFunction() {
     document.getElementById("myP").style.fontSize = "smaller";
 }
-</script>
 
-<script>
 function mybFunction() {
     document.getElementById("myP").style.fontSize = "larger";
 }
 </script>
-
-
-
 
 
 <table style="height: 172px; border-color: #000000; background-color: #4d4d4d; margin-left: auto; margin-right: auto;" border="1" width="950" cellspacing="1" cellpadding="1">
@@ -175,9 +164,38 @@ function mybFunction() {
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-
-</body>
-
-
+  
+  <!--Footer-->
+  <ul class="breadcrumb" id="bc">
+    <li><a href="home.html">Home</a></li>
+    <li class="clicked"><a href="games.html">Games</a></li>
+  </ul>
+  <div id="authorContainer">
+    <div class="autoFit">
+      <h3> Creators of the page</h3>
+      <div class="author">
+        <a href="cv/ashwin.html" target="_blank"><div class="authorPortrait" id="authorAshwin"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
+        <div class="authorTextContainer">
+          <div class="authorName" align="left">Ashwin Kanatt</div>
+          <div class="authorStudent">Student 2</div>
+          <div class="authorContribution">Navigation, CSS</div>
+        </div>
+      </div>
+      <div class="author">
+        <a href="cv/jose.html" target="_blank"><div class="authorPortrait" id="authorJose"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
+        <div class="authorTextContainer">
+          <div class="authorName">Jose Bautista</div>
+          <div class="authorStudent">Student 4</div>
+          <div class="authorContribution">CSS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Help &amp; Information</p>
+    <p><a href="about.html">About Us</a> | <a href="blog.html">Blog</a> | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
+    <p>&copy; <a href="home.html">kugelblitz.co.uk</a> all rights for the pictures belong to their respectful owners</p>
+  </footer>
+</div>
 </body>
 </html>

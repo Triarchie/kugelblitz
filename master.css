@@ -174,11 +174,10 @@ ul#nav ul li a:hover {
  /* Style the list */
 ul.breadcrumb {
 	width: 950px;
-    padding: 1px 1px;
     list-style: none;
     background-color: #222;
     font-size: 17px;
-    padding: 5px 0 5px 20px;
+    padding: 3px 0 5px 20px;
     margin: 0;
     box-sizing: border-box;
     border-top: 1px solid #777;
@@ -189,6 +188,7 @@ ul.breadcrumb li {
     display: inline-block;
 	margin:0px;
 	padding: 0px 0px 0px 0px;
+	font-size: 14px;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -276,19 +276,42 @@ footer a:hover{
 	box-sizing: inherit;
 }
 
+.animationContainer {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.fade {
+	transition: all 0.2s linear;
+	background: black;
+	display: table-cell;
+	opacity: 0;
+	vertical-align: bottom;
+	text-align: center;
+	font-size: 11px;
+	padding-bottom: 3px;
+	color: #FFF;
+}
+
+.fade:hover {
+	opacity: 0.5;
+}
+
+#authorAli {
+	background: url('cv/ali/profile.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
 #authorAshwin {
 	background: url('cv/ashwin/profile.png');
 	background-size: cover;
 	background-position: center center;
 }
 
-#authorAli {
-	background: url('cv/Ali/profile.jpg');
-	background-size: cover;
-	background-position: center center;
-}
 #authorBen {
-	background: url('cv/Ben/404.png');
+	background: url('cv/ben/404.png');
 	background-size: cover;
 	background-position: center center;
 }
