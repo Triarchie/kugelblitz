@@ -1,0 +1,66 @@
+hr {
+	margin: 20px 0 20px 0;
+	border-color: #777;
+}
+
+#aboutContainer {
+	width: 625px;
+	margin-bottom: 16px;
+	display: inline-block;
+	position: relative;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+#aboutContainer h4 {
+	margin: 5px 0 5px 0;
+}
+
+#aboutContainer span {
+	font-style: italic;
+	font-size: 14px;
+}
+
+#aboutContainer p {
+	margin: 0.5em 0 0.5em 0;
+}
+
+.teamContainer {
+	margin: 0 0 0.5em 4px;
+}
+
+.teamPortrait {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	border-radius: 5%;
+	border: 2px solid #AAA;
+	box-sizing: inherit;
+}
+
+.teamTextContainer {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5px;
+	box-sizing: inherit;
+}
+
+.teamTextContainer img {
+	vertical-align: middle;
+}
+
+#tocContainer {
+	display: inline;
+	width: 325px;
+	position: absolute;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+#tocContainer hr {
+	margin: 8px 0 8px 0;
+}
+
+#tocContainer a {
+	padding: 0 0 0 8px;
+}

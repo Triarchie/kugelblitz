@@ -53,3 +53,7 @@ figcaption {
 #tocContainer hr {
 	margin: 8px 0 8px 0;
 }
+
+#tocContainer a {
+	padding: 0 0 0 8px;
+}

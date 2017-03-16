@@ -64,11 +64,19 @@
 
 .featuredDescription h3{
 	color: #fff;
+	margin: 0;
+	padding-top: 0.5em;
 }
 
 .status {
-	padding-top: 10px;
+	padding-top: 0.5em;
 	font-size: 13px;
+}
+
+.description {
+	padding-top: 10px;
+	font-size: 15px;
+	line-height: 19px;
 }
 
 .price {
@@ -84,20 +92,11 @@
 	bottom: 5px;
 	right: 15px;
 	text-transform: uppercase;
-	background-color: rgba(170, 170, 170, 0.2);
+	background-color: rgba(85, 85, 85, 0.7);
 	text-align: center;
 	border: 1px solid #AAA;
 	border-radius: 5px;
 	font-size: 13px;
-}
-
-.buy:hover {
-
-}
-
-.featuredDescription h3 {
-	margin: 0;
-	padding-top: 1em;
 }
 
 .section {
