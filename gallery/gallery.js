@@ -114,4 +114,26 @@ function textColour(formInput) {
 		gallery.className = "greenText";
 	}
 }
+
+// change theme
+
+function themeColour(formInput) {
+	var themeValue = getSelectedValue(formInput.theme);
+	var gallery = document.getElementById("galleryContainer");
+	var description = document.getElementById("descriptionContainer");
+
+	if (themeValue === "default") {
+		gallery.className = "defaultBackground";
+		description.className = "defaultText";
+	} if (themeValue === "theme1") {
+		gallery.className = "greenBackground";
+		description.className = "blueText";;
+	} if (themeValue === "theme2") {
+		gallery.className = "greenBackground";
+		description.className = "blueText";;
+	} if (themeValue === "theme3") {
+		gallery.className = "greenBackground";
+		description.className = "blueText";
+	}
+}
 //-->

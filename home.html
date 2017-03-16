@@ -41,6 +41,7 @@
 			<div class="featuredContainer">
 			<a href="#hide" class="hide" id="hide"><img src="gallery/style_icon.svg" class="settingsButton" width="30" height="30"></a>
 			<a href="#show" class="show" id="show"><img src="gallery/style_icon.svg" class="settingsButton" width="30" height="30"></a>
+
 			<div id="settings">
 				<div id="settingsLabel">Gallery settings</div>
 				<form>
@@ -65,6 +66,15 @@
 						<option value="green">Green</option>
 					</select>
 					<input type="button" onclick="textColour(this.form);" value="Change">
+
+					<label for="theme">Theme</label>
+					<select name="theme" id="theme">
+					<option value="default">Default</option>
+					<option value="theme1">Theme 1</option>
+					<option value="theme2">Theme 2</option>
+					<option value="theme3">Theme 3</option>
+					</select>
+					<input type="button" onclick="themeColour(this.form);" value="Change">
 				</form>
 			</div>
 				<img class="featuredGame" src="gallery/for_honor.jpg" alt="For Honor" style="width:100%"/>
