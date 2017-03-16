@@ -126,8 +126,8 @@ function themeColour(formInput) {
 		gallery.className = "defaultBackground";
 		description.className = "defaultText";
 	} if (themeValue === "theme1") {
-		gallery.className = "greenBackground";
-		description.className = "blueText";;
+		gallery.className = "redBackground";
+		description.className = "blackText";;
 	} if (themeValue === "theme2") {
 		gallery.className = "greenBackground";
 		description.className = "blueText";;
