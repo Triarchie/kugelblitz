@@ -18,15 +18,16 @@ body {
 	position: fixed;
 	top: 0px;
 	border: 1px solid rgba(180, 180, 180, 1);
+	z-index: 5;
 }
 
 .externalButton {
 	padding: 10px;
 	box-sizing: border-box;
 	display: inline-block;
-	letter-spacing: 0.025vw;
+	letter-spacing: 0.00vw;
 	font-family: "Myriad Pro", "Lucida Grande", sans-serif;
-	width: 19.68%;
+	width: 19.6%;
 	text-align: center;
 	border-right: 1px solid rgba(180, 180, 180, 1);
 }

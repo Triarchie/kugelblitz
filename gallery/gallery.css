@@ -65,7 +65,7 @@
 }
 
 .featuredDescription h3{
-	color: #fff;
+	color: inherit;
 	margin: 0;
 	padding-top: 0.5em;
 }
@@ -82,7 +82,7 @@
 }
 
 .price {
-	color: #fff;
+	color: inherit;
 	position: absolute;
 	bottom: 8px;
 	font-size: 14px;
@@ -226,7 +226,7 @@
 	top: 20px;
 	right: 20px;
 	font-weight: 600;
-	color: #fff;
+	color: inherit;
 }
 
 /*
@@ -241,19 +241,31 @@
 }
 
 .whiteBackground {
-	background-color: white;
+	background-color: #f4f4f4;
 }
 .blackBackground {
-	background-color: black;
+	background-color: #1d2731;
 }
 .redBackground {
-	background-color: darkred;
+	background-color: #76323f;
 }
 .blueBackground {
-	background-color: blue;
+	background-color: #4484ce;
 }
 .greenBackground {
-	background-color: green;
+	background-color: #3cc47c;
+}
+
+.theme1Background {
+	background-color: #caebf2;
+}
+
+.theme2Background {
+	background-color: #ecd06f;
+}
+
+.theme3Background {
+	background-color: #015e91;
 }
 
 .defaultText {
@@ -264,14 +276,26 @@
 	color: white;
 }
 .blackText {
-	color: black;
+	color: #0e0b16;
 }
 .redText {
-	color: darkred;
+	color: #b82601;
 }
 .blueText {
-	color: blue;
+	color: #015e91;
 }
 .greenText {
-	color: green;
+	color: #1b7b34;
+}
+
+.theme1Text {
+	color: #0e0b16;
+}
+
+.theme2Text {
+	color: #133c53;
+}
+
+.theme3Text {
+	color: #fff;
 }
