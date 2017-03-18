@@ -18,7 +18,7 @@ figcaption {
 	margin-bottom: 16px;
 	display: inline-block;
 	position: relative;
-	padding: 16px;
+	padding: 0 1em 1em 1em;
 	box-sizing: border-box;
 }
 
@@ -52,7 +52,7 @@ figcaption {
 	display: inline;
 	width: 325px;
 	position: absolute;
-	padding: 16px;
+	padding: 0 1em 1em 1em;
 	box-sizing: border-box;
 }
 
