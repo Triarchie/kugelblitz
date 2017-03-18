@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Form</title>
+		<script type="text/javascript">
+			function fillInCheck(form){
+				if((form.name.value.length < 1) | (form.rating.value < 1)){
+					alert("You have not entered a name or forgot to rate the site.");
+					return false;
+				}else{
+					alert("Dear " + form.name.value + ",\nThank you very much for your feedback.\nWe are glad that you have rated your experience with the site as " + form.rating.value +"  and your comment was: "+ form.comment.value);
+					return true;
+				}
+			}
+		</script>
+	</head>
+<body>
+
+	<form>
+		<legend>Feedback:</legend>
+		Name:<br>
+  		<input type="text" name="name"><br>
+  		Rate us:<br>
+  		<span style="display: inline;">
+  		<input type="radio" name="rating" value="1"> 1 Star<br>
+  		<input type="radio" name="rating" value="2"> 2 Star<br>
+  		<input type="radio" name="rating" value="3"> 3 Star<br>
+  		<input type="radio" name="rating" value="4"> 4 Star<br>
+  		<input type="radio" name="rating" value="5"> 5 Star<br>
+  		</span>
+  		comment:<br>
+  		<textarea name="comment" rows="8" cols="40">Your comment...</textarea><br>
+  		<button type="button" onclick="fillInCheck(form)">Submit</button>
+	 </form>
+</body>
+</html>
