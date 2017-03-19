@@ -61,7 +61,7 @@
 var myVar;
 
 function loadingScreenTime() {
-    myVar = setTimeout(showPage, 200);
+    myVar = setTimeout(showPage, 200); 
 }
 
 function showPage() {
@@ -110,50 +110,167 @@ function mybFunction() {
 	</nav>
 	</header>
 	<!--Global navigation ends here-->
-	
-<h1>Choose a Game</h1>
-<button type="button" onclick="mysFunction()">Small</button>
-<button type="button" onclick="mybFunction()">Big</button>
+<script type="text/javascript">  
 
-<table style="height: 172px; border-color: #000000; background-color: #4d4d4d; margin-left: auto; margin-right: auto;" border="1" width="950" cellspacing="1" cellpadding="1">
+
+<!--This is the image array list which will always show the user the game they have selected by representing the image of the product-->
+var ImgArray = [				
+  "product_Images/forh.jpg",
+  "product_Images/sky.jpg",
+  "product_Images/sp.jpg",
+  "product_Images/mass.jpeg",
+  "product_Images/ghost.jpg",
+  "product_Images/placeholder.jpg",
+];
+function ChangeImg(imgPtr) {
+  document.getElementById('gameImg').src = ImgArray[imgPtr];
+}
+</script>
+
+<!-- All variables are listed globally as functions are prompted to change the price and amount live anytime the user decides to press multiple radio buttons  -->
+<p id="imageID"></p>
+<script>
+
+ var price = 0;
+ var chosenGame = "Pick a Game";
+ var amount = 0;
+ var fillIn = "";
+ var lessthen = 0;
+ var total = 0;
+ <!--  This function gets the value of the radio button and displays the image selected in the pre billing section of their chsoen prodcut-->
+ <!--  This is also used to calculate the price and quantity live in the prebilling section-->
+function grabValue(selectedGame) {
+    document.getElementById("imageID").value = selectedGame;
+    price = document.getElementById("imageID").value;
+	amount = document.getElementById("mySelect").value; 
+	if (price == 0) {
+	chosenGame = "For Honor (Open Beta)";
+	price = 39;
+	total = price * amount;}
+	if (price == 1) {
+	chosenGame = "No Man's Sky (Early Access)";
+	price = 9;
+	total = price * amount;}
+	if (price == 2) {
+	chosenGame = "The Fractured But Whole";
+	price = 20;
+	total = price * amount;}
+	if (price == 3) {
+	chosenGame = "Mass Effect Andromeda";
+	price = 40;
+	total = price * amount;}
+	if (price == 4) {
+	chosenGame = "Ghost Recond Wildlands";
+	price = 25;
+	total = price * amount;}
+	}
+</script>
+
+
+<script>
+ <!--  This function displays the final billig alert message to the user-->
+ <!--  It also incorporates valitidy so that the user must have a name entered, an Item picked and a chosen quantity or they will not be able to progress-->
+function myFunction() {
+	var customerName = document.getElementById("userText").value;
+	amount = document.getElementById("mySelect").value; 
+	total = amount * price;
+	if (price > 1 && customerName != fillIn) { 
+    alert("Hi " + customerName  + " The game you have chosen " + chosenGame + " " + "which costs £" + price + " per copy. " 
+	+ "you have ordered " + amount + " " + chosenGame + ". " + "The total cost is £" + total + ". Thank you for shopping at KugelBlitz.");}
+	else {
+	alert ("You have not chosen a prodct, invalid name, or invalid quantity.")}
+}
+</script>
+
+
+<h1>Choose a Game</h1>
+<!--  These functions are used to increase and decrease text size on the page.-->
+<button type="button" onclick="mysFunction()">Decrease Text Size</button>
+<button type="button" onclick="mybFunction()">Increase Text Size</button>
+
+<!--  The table starts here which will be used to display games and the pre-billing section-->
+<table style="height: 172px; border-color: #000000; background-color: #4d4d4d; margin-left: auto; margin-right: auto;" border="1" width="920" cellspacing="1" cellpadding="1">
 <tbody>
 <tr>
 <td>
-<p><span style="color: #ffffff;"><strong><img src="https://s1.gaming-cdn.com/images/products/877/orig/877.jpg" alt="For Honor Image" width="150" height="220" /></strong></span></p>
+<p><span style="color: #ffffff;"><strong><img src="product_Images/forh.jpg" alt="For Honor Image" width="150" height="220" /></strong></span></p>
 <p><span style="color: #ffffff;"><strong>For Honor (Open Beta) </strong></span></p>
 <p><span style="color: #ffffff;"><strong>£39&nbsp;</strong></span></p>
+<p><span style="color: #ffffff;"><strong>&pound;39&nbsp;</strong></span></p>
+<input type="radio" name="imgControl" value="0" onclick="ChangeImg(this.value); grabValue(this.value); updateCart();">
 </td>
 <td>
-<p><span style="color: #ffffff;"><strong><img src="https://upload.wikimedia.org/wikipedia/en/6/67/No_Man%27s_Sky.jpg" alt="No Man Sky Image" width="150" height="220" /></strong></span></p>
+<p><span style="color: #ffffff;"><strong><img src="product_Images/sky.jpg" alt="No Man Sky Image" width="150" height="220" /></strong></span></p>
 <p><span style="color: #ffffff;"><strong>No Man's Sky (Early Access)</strong></span></p>
 <p><span style="color: #ffffff;"><strong>£9&nbsp;</strong></span></p>
+<p><span style="color: #ffffff;"><strong>&pound;9&nbsp;</strong></span></p>
+<input type="radio" name="imgControl" value="1" onclick="ChangeImg(this.value); grabValue(this.value); updateCart();">
 </td>
 <td>
-<p><span style="color: #ffffff;"><strong><img src="http://download.gamezone.com/uploads/image/data/1204419/sp2-search-thumbnail_Mobile_208891.jpg" alt="South Park Image" width="150" height="220" /></strong></span></p>
+<p><span style="color: #ffffff;"><strong><img src="product_Images/sp.jpg" alt="South Park Image" width="150" height="220" /></strong></span></p>
 <p><span style="color: #ffffff;"><strong>The Fractured But Whole</strong></span></p>
 <p><span style="color: #ffffff;"><strong>£20&nbsp;</strong></span></p>
+<p><span style="color: #ffffff;"><strong>&pound;20&nbsp;</strong></span></p>
+<input type="radio" name="imgControl" value="2" onclick="ChangeImg(this.value); grabValue(this.value); updateCart();">
 </td>
 <td>
-<p><span style="color: #ffffff;"><strong><img src="https://upload.wikimedia.org/wikipedia/en/0/07/Mass_Effect_Andromeda_cover.jpeg" alt="Mass Effect Image" width="150" height="220" /></strong></span></p>
+<p><span style="color: #ffffff;"><strong><img src="product_Images/mass.jpeg" alt="Mass Effect Image" width="150" height="220" /></strong></span></p>
 <p><span style="color: #ffffff;"><strong>Mass Effect Andromeda</strong></span></p>
 <p><span style="color: #ffffff;"><strong>£40&nbsp;</strong></span></p>
+<p><span style="color: #ffffff;"><strong>&pound;40&nbsp;</strong></span></p>
+<input type="radio" name="imgControl" value="3" onclick="ChangeImg(this.value); grabValue(this.value); updateCart();">
 </td>
 <td>
-<p><span style="color: #ffffff;"><strong><img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Ghost_Recon_Wildlands_cover_art.jpg" alt="Ghost Recon Wildlands" width="150" height="220" /></strong></span></p>
+<p><span style="color: #ffffff;"><strong><img src="product_Images/ghost.jpg" alt="Ghost Recon Wildlands" width="150" height="220" /></strong></span></p>
 <p><span style="color: #ffffff;"><strong>Ghost Recon Wildlands</strong></span></p>
 <p><span style="color: #ffffff;"><strong>£25&nbsp;</strong></span></p>
 <td>
 <p><span style="color: #ffffff;"><strong><img src="http://hancockconcrete.com/wp-content/uploads/2015/06/placeholder-square.jpg" alt="User's chosen game" width="150" height="220" /></strong></span></p>
 <p><span style="color: #ffffff;"><strong>Place Holder</strong></span></p>
 <p><span style="color: #ffffff;"><strong>£0&nbsp;</strong></span></p>
+<p><span style="color: #ffffff;"><strong>&pound;25&nbsp;</strong></span></p>
+<input type="radio" name="imgControl" value="4" onclick="ChangeImg(this.value); grabValue(this.value); updateCart();">
+<td>
+<p><span style="color: #ffffff;"><strong><img id="gameImg" src="" alt="" width="150" height="220"></strong></span></p>
+<p><span style="color: #ffffff;"><strong>Your Chosen Game (Basket)</strong></span></p>
+<span style="color: #ffffff;"><strong>&pound;<p id="displayValue"></p></strong></span>
 </td>
 </tr>
 </tbody>
 </table>
+<!-- Table ends here -->
+<script><!--  The function here is used to make sure whenever the user presses a radio button or selectes another quantity, this will always update the pre-billing section to know the total cost -->
+function updateCart() {
+	amount = document.getElementById("mySelect").value; 
+	total = price * amount
+    document.getElementById("displayValue").innerHTML = total;
+}
+</script>
+
+<p><span style="color: #ffffff;"><strong>&nbsp;</strong></span></p>
+
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-  
+<!--This form is used for the user to enter their name.  -->
+  <body>
+  <form>
+   <p> Please enter your full Name: <input type="text" id="userText" />
+   </form> 
+   
+<!-- Drop down box to select quantity. -->
+<form>
+Select the number of copies you want to purchase:
+<select id="mySelect" onchange="updateCart()">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+</form>
+<!-- Function used to place order -->
+<button onclick="myFunction()">Place Order</button>
+  </body>
+ 
+
   <!--Footer-->
   <ul class="breadcrumb" id="bc">
     <li><a href="home.html">Home</a></li>
