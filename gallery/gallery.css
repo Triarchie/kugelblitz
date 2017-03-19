@@ -30,6 +30,7 @@
 .topContainer {
 	line-height: 0;
 	box-sizing: border-box;
+	background: inherit;
 }
 
 .featuredContainer {
@@ -38,6 +39,7 @@
 	display: inline-block;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
 	box-sizing: border-box;
+	background: inherit;
 }
 
 .featuredGame {
@@ -63,16 +65,24 @@
 }
 
 .featuredDescription h3{
-	color: #fff;
+	color: inherit;
+	margin: 0;
+	padding-top: 0.5em;
 }
 
 .status {
-	padding-top: 10px;
+	padding-top: 0.5em;
 	font-size: 13px;
 }
 
+.description {
+	padding-top: 10px;
+	font-size: 15px;
+	line-height: 19px;
+}
+
 .price {
-	color: #fff;
+	color: inherit;
 	position: absolute;
 	bottom: 8px;
 	font-size: 14px;
@@ -84,20 +94,11 @@
 	bottom: 5px;
 	right: 15px;
 	text-transform: uppercase;
-	background-color: rgba(170, 170, 170, 0.2);
+	background-color: rgba(85, 85, 85, 0.7);
 	text-align: center;
 	border: 1px solid #AAA;
 	border-radius: 5px;
 	font-size: 13px;
-}
-
-.buy:hover {
-
-}
-
-.featuredDescription h3 {
-	margin: 0;
-	padding-top: 1em;
 }
 
 .section {
@@ -159,7 +160,7 @@
     height: auto;
     float: left;
     z-index: 10;
-    background: #222;
+    background: inherit;
     padding: 40px 20px 20px 20px;
     opacity: 0.9;
     animation: fadein 0.5s;
@@ -225,7 +226,7 @@
 	top: 20px;
 	right: 20px;
 	font-weight: 600;
-	color: #fff;
+	color: inherit;
 }
 
 /*
@@ -240,19 +241,31 @@
 }
 
 .whiteBackground {
-	background-color: white;
+	background-color: #f4f4f4;
 }
 .blackBackground {
-	background-color: black;
+	background-color: #262228;
 }
 .redBackground {
-	background-color: darkred;
+	background-color: #76323f;
 }
 .blueBackground {
-	background-color: blue;
+	background-color: #4484ce;
 }
 .greenBackground {
-	background-color: green;
+	background-color: #3cc47c;
+}
+
+.theme1Background {
+	background-color: #caebf2;
+}
+
+.theme2Background {
+	background-color: #ecd06f;
+}
+
+.theme3Background {
+	background-color: #015e91;
 }
 
 .defaultText {
@@ -263,14 +276,26 @@
 	color: white;
 }
 .blackText {
-	color: black;
+	color: #0e0b16;
 }
 .redText {
-	color: darkred;
+	color: #b82601;
 }
 .blueText {
-	color: blue;
+	color: #015e91;
 }
 .greenText {
-	color: green;
+	color: #1b7b34;
+}
+
+.theme1Text {
+	color: #0e0b16;
+}
+
+.theme2Text {
+	color: #133c53;
+}
+
+.theme3Text {
+	color: #fff;
 }

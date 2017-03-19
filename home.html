@@ -36,6 +36,7 @@
 	<!--Global navigation ends here-->
 
 	<!--Gallery starts here-->
+	<h3 class="containerReplace">Featured Games</h3>
 	<div class="defaultBackground" id="galleryContainer">
 		<div class="topContainer">
 			<div class="featuredContainer">
@@ -65,6 +66,15 @@
 						<option value="green">Green</option>
 					</select>
 					<input type="button" onclick="textColour(this.form);" value="Change">
+
+					<label for="theme">Theme</label>
+					<select name="theme" id="theme">
+					<option value="default">Default</option>
+					<option value="theme1">Theme 1</option>
+					<option value="theme2">Theme 2</option>
+					<option value="theme3">Theme 3</option>
+					</select>
+					<input type="button" onclick="themeColour(this.form);" value="Change">
 				</form>
 			</div>
 				<img class="featuredGame" src="gallery/for_honor.jpg" alt="For Honor" style="width:100%"/>
@@ -77,26 +87,31 @@
 				<div class="featuredDescription">
 					<h3>For Honor</h3>
 					<div class="status">Now Available</div>
+					<div class="description">A third-person hack and slash fighting game developed and published by Ubisoft. Play the roles of knights, samurai, and vikings!</div>
 					<div class="price">£39.99</div>
 					<div class="buy"><a href="games.html">Buy</a></div>
 				</div>
 				<div class="featuredDescription">
 					<h3>Mass Effect: Andromeda</h3>
 					<div class="status">Upcoming</div>
+					<div class="description">An upcoming action role-playing game developed by BioWare and published by Electronic Arts. Assume the role of either Scott or Sara Ryder, an inexperienced military recruit who joins the Initiative and wakes up in Andromeda following a 600-year journey.</div>
 				</div>
 				<div class="featuredDescription">
 					<h3>No Man's Sky</h3>
 					<div class="status">Pre-Order Now</div>
+					<div class="description">An action-adventure survival game developed and published by Hello Games. Explore the entirety of a procedurally generated deterministic open universe!</div>
 					<div class="price">£39.99</div>
 					<div class="buy"><a href="games.html">Buy</a></div>
 				</div>
 				<div class="featuredDescription">
 					<h3>South Park: The Fractured But Whole</h3>
 					<div class="status">Upcoming</div>
+					<div class="description">An upcoming role-playing game developed and published by Ubisoft. Based on the American adult animated television series South Park, and following the plot after South Park: The Stick of Truth.</div>
 				</div>
 				<div class="featuredDescription">
 					<h3>Tom Clancy's Ghost Recon: Wildlands</h3>
-					<div class="status">In Beta</div>
+					<div class="status">Now Available</div>
+					<div class="description">An open world tactical shooter game developed by Ubisoft Paris. The game moves away from the futuristic setting and instead feature a setting similar to the original Tom Clancy's Ghost Recon.</div>
 					<div class="price">£39.99</div>
 					<div class="buy"><a href="games.html">Buy</a></div>
 				</div>
@@ -133,7 +148,7 @@
 			<div class="author">
 				<a href="cv/ashwin.html" target="_blank"><div class="authorPortrait" id="authorAshwin"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
 				<div class="authorTextContainer">
-					<div class="authorName" align="left">Ashwin Kanatt</div>
+					<div class="authorName"><a href="cv/ashwin.html" target="_blank" title="View CV">Ashwin Kanatt</a></div>
 					<div class="authorStudent">Student 2</div>
 					<div class="authorContribution">Home, Navigation, CSS</div>
 				</div>
@@ -141,7 +156,7 @@
 			<div class="author">
 				<a href="cv/jose.html" target="_blank"><div class="authorPortrait" id="authorJose"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
 				<div class="authorTextContainer">
-					<div class="authorName">Jose Bautista</div>
+					<div class="authorName"><a href="cv/jose.html" target="_blank" title="View CV">Jose Bautista</a></div>
 					<div class="authorStudent">Student 4</div>
 					<div class="authorContribution">Gallery, CSS</div>
 				</div>
@@ -150,8 +165,9 @@
 	</div>
 	<footer>
 		<p>Help &amp; Information</p>
-		<p><a href="about.html">About Us</a> | <a href="blog.html">Blog</a> | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
+		<p><a href="about.html">About Us</a> | <a href="blog.html">Blog</a> | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a> | <a href="support.html">Contact Us</a></p>
 		<p>&copy; <a href="home.html">kugelblitz.co.uk</a> all rights for the pictures belong to their respectful owners</p>
+		<p><a href="intro.html"><span id="play">&#8227;</span> Replay presentation page</a></p>
 	</footer>
 </div>
 </body>

@@ -99,19 +99,53 @@ function backgroundColour(formInput) {
 function textColour(formInput) {
 	var textColourValue = getSelectedValue(formInput.text);
 	var gallery = document.getElementById("descriptionContainer");
+	var settings = document.getElementById("settings");
 
 	if (textColourValue === "default") {
 		gallery.className = "defaultText";
+		settings.className = "defaultText";
 	} if (textColourValue === "white") {
 		gallery.className = "whiteText";
+		settings.className = "whiteText";
 	} if (textColourValue === "black") {
 		gallery.className = "blackText";
+		settings.className = "blackText";
 	} if (textColourValue === "red") {
 		gallery.className = "redText";
+		settings.className = "redText";
 	} if (textColourValue === "blue") {
 		gallery.className = "blueText";
+		settings.className = "blueText";
 	} if (textColourValue === "green") {
 		gallery.className = "greenText";
+		settings.className = "greenText";
+	}
+}
+
+// change theme
+
+function themeColour(formInput) {
+	var themeValue = getSelectedValue(formInput.theme);
+	var gallery = document.getElementById("galleryContainer");
+	var description = document.getElementById("descriptionContainer");
+	var settings = document.getElementById("settings");
+
+	if (themeValue === "default") {
+		gallery.className = "defaultBackground";
+		description.className = "defaultText";
+		settings.className = "defaultText";
+	} if (themeValue === "theme1") {
+		gallery.className = "theme1Background";
+		description.className = "theme1Text";
+		settings.className = "theme1Text";
+	} if (themeValue === "theme2") {
+		gallery.className = "theme2Background";
+		description.className = "theme2Text";
+		settings.className = "theme2Text";
+	} if (themeValue === "theme3") {
+		gallery.className = "theme3Background";
+		description.className = "whiteText";
+		settings.className = "whiteText";
 	}
 }
 //-->

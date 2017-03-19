@@ -1,0 +1,35 @@
+/*
+	Stylesheet for the sitemap for Kugelblitz
+	By Jose Bautista
+	Student ID: w1544934
+*/
+
+#sitemapContainer {
+	padding: 0 1em 1em 1em;
+	display: inline-block;
+}
+
+.sitemap {
+	margin: 0 0 1em 0;
+	padding-left: 1em;
+}
+
+.sitemap li.heading {
+	border: 1px solid #777;
+	width: 200px;
+	padding: 0.3em;
+	padding: 0.3em 0.3em 0.3em 0.5em;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #222;
+	margin: 0 0 0.5em 0;
+}
+
+.sitemap li {
+	list-style: none;
+	margin-bottom: 0.1em;
+}
+
+.sitemap ul {
+	margin-bottom: 0.5em;
+}

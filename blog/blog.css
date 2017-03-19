@@ -1,3 +1,9 @@
+/*
+	Stylesheet for blog posts for Kugelblitz
+	By Jose Bautista
+	Student ID: w1544934
+*/
+
 hr {
 	margin: 20px 0 20px 0;
 	border-color: #777;
@@ -12,7 +18,7 @@ figcaption {
 	margin-bottom: 16px;
 	display: inline-block;
 	position: relative;
-	padding: 16px;
+	padding: 0 1em 1em 1em;
 	box-sizing: border-box;
 }
 
@@ -46,10 +52,14 @@ figcaption {
 	display: inline;
 	width: 325px;
 	position: absolute;
-	padding: 16px;
+	padding: 0 1em 1em 1em;
 	box-sizing: border-box;
 }
 
 #tocContainer hr {
 	margin: 8px 0 8px 0;
+}
+
+#tocContainer a {
+	padding: 0 0 0 8px;
 }
