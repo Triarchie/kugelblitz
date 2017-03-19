@@ -35,22 +35,24 @@
 	</nav>
 	</header>
 	<!--Global navigation ends here-->
-	<form>
-		<legend>Feedback:</legend>
-		Name:<br>
-  		<input type="text" name="name"><br>
-  		Rate us:<br>
-  		<span style="display: inline;">
-  		<input type="radio" name="rating" value="1"> 1 Star<br>
-  		<input type="radio" name="rating" value="2"> 2 Star<br>
-  		<input type="radio" name="rating" value="3"> 3 Star<br>
-  		<input type="radio" name="rating" value="4"> 4 Star<br>
-  		<input type="radio" name="rating" value="5"> 5 Star<br>
-  		</span>
-  		comment:<br>
-  		<textarea name="comment" rows="8" cols="40">Your comment...</textarea><br>
-  		<button type="button" onclick="fillInCheck(form)">Submit</button>
-	 </form>
+	<div id="container">
+		<form>
+			<h3>Support</h3>
+			Name:<br>
+	  		<input type="text" name="name"><br>
+	  		Rate us:<br>
+	  		<span style="display: inline;">
+	  		<input type="radio" name="rating" value="1"> 1 Star<br>
+	  		<input type="radio" name="rating" value="2"> 2 Star<br>
+	  		<input type="radio" name="rating" value="3"> 3 Star<br>
+	  		<input type="radio" name="rating" value="4"> 4 Star<br>
+	  		<input type="radio" name="rating" value="5"> 5 Star<br>
+	  		</span>
+	  		Comment:<br>
+	  		<textarea name="comment" rows="8" cols="40"></textarea><br>
+	  		<button type="button" onclick="fillInCheck(form)">Submit</button>
+		 </form>
+	 </div>
 	<!--Footer-->
 	<ul class="breadcrumb" id="bc">
 		<li><a href="home.html">Home</a></li>
