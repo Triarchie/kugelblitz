@@ -82,7 +82,7 @@ function mybFunction() {
 <body onload="loadingScreenTime()" style="margin:0;" id="myP">
 <div id="loader"></div>
 <!-- Loading screen ends here -->
-<div class="animate-bottom" id="main_div" style="display: none">
+<div class="animation-bottom" id="main_div" style="display: none">
 	<!--Global navigation starts here-->
 	<header>
 	<div id="textlogobox">
@@ -181,6 +181,7 @@ function myFunction() {
 	alert ("You have not chosen a prodct, invalid name, or invalid quantity.")}
 }
 </script>
+</script>
 
 
 <h1>Choose a Game</h1>
@@ -195,39 +196,30 @@ function myFunction() {
 <td>
 <p><span style="color: #ffffff;"><strong><img src="product_Images/forh.jpg" alt="For Honor Image" width="150" height="220" /></strong></span></p>
 <p><span style="color: #ffffff;"><strong>For Honor (Open Beta) </strong></span></p>
-<p><span style="color: #ffffff;"><strong>£39&nbsp;</strong></span></p>
 <p><span style="color: #ffffff;"><strong>&pound;39&nbsp;</strong></span></p>
 <input type="radio" name="imgControl" value="0" onclick="ChangeImg(this.value); grabValue(this.value); updateCart();">
 </td>
 <td>
 <p><span style="color: #ffffff;"><strong><img src="product_Images/sky.jpg" alt="No Man Sky Image" width="150" height="220" /></strong></span></p>
 <p><span style="color: #ffffff;"><strong>No Man's Sky (Early Access)</strong></span></p>
-<p><span style="color: #ffffff;"><strong>£9&nbsp;</strong></span></p>
 <p><span style="color: #ffffff;"><strong>&pound;9&nbsp;</strong></span></p>
 <input type="radio" name="imgControl" value="1" onclick="ChangeImg(this.value); grabValue(this.value); updateCart();">
 </td>
 <td>
 <p><span style="color: #ffffff;"><strong><img src="product_Images/sp.jpg" alt="South Park Image" width="150" height="220" /></strong></span></p>
 <p><span style="color: #ffffff;"><strong>The Fractured But Whole</strong></span></p>
-<p><span style="color: #ffffff;"><strong>£20&nbsp;</strong></span></p>
 <p><span style="color: #ffffff;"><strong>&pound;20&nbsp;</strong></span></p>
 <input type="radio" name="imgControl" value="2" onclick="ChangeImg(this.value); grabValue(this.value); updateCart();">
 </td>
 <td>
 <p><span style="color: #ffffff;"><strong><img src="product_Images/mass.jpeg" alt="Mass Effect Image" width="150" height="220" /></strong></span></p>
 <p><span style="color: #ffffff;"><strong>Mass Effect Andromeda</strong></span></p>
-<p><span style="color: #ffffff;"><strong>£40&nbsp;</strong></span></p>
 <p><span style="color: #ffffff;"><strong>&pound;40&nbsp;</strong></span></p>
 <input type="radio" name="imgControl" value="3" onclick="ChangeImg(this.value); grabValue(this.value); updateCart();">
 </td>
 <td>
 <p><span style="color: #ffffff;"><strong><img src="product_Images/ghost.jpg" alt="Ghost Recon Wildlands" width="150" height="220" /></strong></span></p>
 <p><span style="color: #ffffff;"><strong>Ghost Recon Wildlands</strong></span></p>
-<p><span style="color: #ffffff;"><strong>£25&nbsp;</strong></span></p>
-<td>
-<p><span style="color: #ffffff;"><strong><img src="http://hancockconcrete.com/wp-content/uploads/2015/06/placeholder-square.jpg" alt="User's chosen game" width="150" height="220" /></strong></span></p>
-<p><span style="color: #ffffff;"><strong>Place Holder</strong></span></p>
-<p><span style="color: #ffffff;"><strong>£0&nbsp;</strong></span></p>
 <p><span style="color: #ffffff;"><strong>&pound;25&nbsp;</strong></span></p>
 <input type="radio" name="imgControl" value="4" onclick="ChangeImg(this.value); grabValue(this.value); updateCart();">
 <td>
@@ -282,7 +274,7 @@ Select the number of copies you want to purchase:
         <div class="author">
         <a href="cv/ali.html" target="_blank"><div class="authorPortrait" id="authorAli"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
         <div class="authorTextContainer">
-          <div class="authorName"><a href="cv/ali.html" target="_blank" title="View CV">Al-Amine Huda</a></div>
+          <div class="authorName">Al-Amine Huda</div>
           <div class="authorStudent">Student 1</div>
           <div class="authorContribution">Games, CSS</div>
         </div>
@@ -290,7 +282,7 @@ Select the number of copies you want to purchase:
       <div class="author">
         <a href="cv/ashwin.html" target="_blank"><div class="authorPortrait" id="authorAshwin"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
         <div class="authorTextContainer">
-          <div class="authorName"><a href="cv/ashwin.html" target="_blank" title="View CV">Ashwin Kanatt</a></div>
+          <div class="authorName" align="left">Ashwin Kanatt</div>
           <div class="authorStudent">Student 2</div>
           <div class="authorContribution">Navigation, CSS</div>
         </div>
@@ -298,7 +290,7 @@ Select the number of copies you want to purchase:
       <div class="author">
         <a href="cv/jose.html" target="_blank"><div class="authorPortrait" id="authorJose"><div class="animationContainer"><div class="fade">View CV</div></div></div></a>
         <div class="authorTextContainer">
-          <div class="authorName"><a href="cv/jose.html" target="_blank" title="View CV">Jose Bautista</a></div>
+          <div class="authorName">Jose Bautista</div>
           <div class="authorStudent">Student 4</div>
           <div class="authorContribution">CSS</div>
         </div>
@@ -307,7 +299,7 @@ Select the number of copies you want to purchase:
   </div>
   <footer>
     <p>Help &amp; Information</p>
-    <p><a href="about.html">About Us</a> | <a href="blog.html">Blog</a> | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a> | <a href="support.html">Contact Us</a></p>
+    <p><a href="about.html">About Us</a> | <a href="blog.html">Blog</a> | <a href="sitemap.html">Sitemap</a> | <a href="tos.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
     <p>&copy; <a href="home.html">kugelblitz.co.uk</a> all rights for the pictures belong to their respectful owners</p>
   </footer>
 </div>
