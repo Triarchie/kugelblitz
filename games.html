@@ -3,7 +3,6 @@
 <title>Purchase Games</title>
 <meta charset="UTF-8"/>
 <link rel="stylesheet" type="text/css" href="master.css"/>
-<link rel="stylesheet" type="text/css" href="gallery/gallery.css"/>
 <link rel="icon" type="image/png" href="logo/blue.png">
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto" rel="stylesheet">
 <script>
@@ -27,6 +26,12 @@ function mybFunction() {
     document.getElementById("myP").style.fontSize = "larger";
 }
 </script>
+<style>
+#container {
+	display: inline-block;
+	padding: 0 1em 1em 1em;
+}
+</style>
 <!-- Loading screen starts here -->
 <body onload="loadingScreenTime()" style="margin:0;" id="myP">
 <div id="loader"></div>
@@ -131,8 +136,8 @@ function myFunction() {
 }
 </script>
 
-
-<h1>Choose a Game</h1>
+<div id="container">
+<h3>Choose a Game</h3>
 <!--  These functions are used to increase and decrease text size on the page.-->
 <button type="button" onclick="mysFunction()">Decrease Text Size</button>
 <button type="button" onclick="mybFunction()">Increase Text Size</button>
@@ -208,7 +213,7 @@ Select the number of copies you want to purchase:
 </form>
 <!-- Function used to place order -->
 <button onclick="myFunction()">Place Order</button>
-  </body>
+</div>
  
 
   <!--Footer-->
