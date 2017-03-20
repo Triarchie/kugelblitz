@@ -83,8 +83,13 @@ header{
 	color: #09D4FF;
 }
 
+.color_change {
+	-webkit-text-stroke: 1px black;
+}
+
 .color_change2 {
 	color: #09D4FF;
+	-webkit-text-stroke: 1px black;
 }
 
 #textlogo a:hover .color_change2 {
