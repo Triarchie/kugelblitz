@@ -1,0 +1,49 @@
+html { 
+	background: url(darkspace.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family:  Verdana, Geneva, sans-serif;
+}
+/* Above is the background and typeface chosen*/
+
+/* Header font options*/
+h1{
+	font-weight: 100;
+	letter-spacing: 6;
+	font-size: 24px;
+}
+/*Headings 2 Font options */
+h2{
+	font-weight: 100;
+	letter-spacing: 6;
+	font-size: 20px;
+}
+/* New paragph line options*/
+p{
+	font-weight:10;
+	letter-spacing: 1;
+}
+/* Text colour*/
+a{
+	color:white;
+}
+/* Text div that will contain all text and tables */
+.profile {
+	width: 600px;
+	background: rgba(190,190,190,0.2); 
+	color: white;
+	margin: auto;
+    	width: 50%;
+    	border: 3px solid white;
+    	padding: 10px;
+}
+.picture{
+	border-radius: 50%;
+	border: 3px solid rgba(240,248,255,0.8);
+	height: 150px;
+	width: 120px;
+}
+table {
+	border: 2px solid white;
