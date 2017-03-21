@@ -63,3 +63,17 @@ figcaption {
 #tocContainer a {
 	padding: 0 0 0 8px;
 }
+
+pre {
+	text-align: center;
+}
+
+.description {
+	text-align: center;
+}
+
+.blogImage {
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #777;
+}
